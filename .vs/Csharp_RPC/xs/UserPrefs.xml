@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{97476375-FEC1-48C5-A6BC-78F89C3F173B}|Default">
+  <MonoDevelop.Ide.ItemProperties.Csharp__RPC__Client PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Csharp_RPC_Server/IUserInfo.cs">
+    <Files>
+      <File FileName="Csharp_RPC_Server/Program.cs" Line="58" Column="1" />
+      <File FileName="Csharp_RPC_Server/IUserInfo.cs" Line="25" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Csharp_RPC" expanded="True">
+            <Node name="Csharp_RPC_Client" expanded="True" />
+            <Node name="Csharp_RPC_Server" expanded="True">
+              <Node name="IUserInfo.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
