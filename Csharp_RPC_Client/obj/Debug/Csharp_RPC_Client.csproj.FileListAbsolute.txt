@@ -1,0 +1,7 @@
+C:\Users\puffer_1031\Desktop\Some\Csharp_RPC\Exe\Csharp_RPC_Client.exe.config
+C:\Users\puffer_1031\Desktop\Some\Csharp_RPC\Exe\Csharp_RPC_Client.exe
+C:\Users\puffer_1031\Desktop\Some\Csharp_RPC\Exe\Csharp_RPC_Client.pdb
+C:\Users\puffer_1031\Desktop\Some\Csharp_RPC\Csharp_RPC_Client\obj\Debug\Csharp_RPC_Client.csprojAssemblyReference.cache
+C:\Users\puffer_1031\Desktop\Some\Csharp_RPC\Csharp_RPC_Client\obj\Debug\Csharp_RPC_Client.csproj.CoreCompileInputs.cache
+C:\Users\puffer_1031\Desktop\Some\Csharp_RPC\Csharp_RPC_Client\obj\Debug\Csharp_RPC_Client.exe
+C:\Users\puffer_1031\Desktop\Some\Csharp_RPC\Csharp_RPC_Client\obj\Debug\Csharp_RPC_Client.pdb
