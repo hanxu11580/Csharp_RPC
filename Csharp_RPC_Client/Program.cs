@@ -6,9 +6,8 @@ namespace Csharp_RPC_Client
     {
         static void Main(string[] args)
         {
-
             MyUserInfoProxy myUserInfoProxy = new MyUserInfoProxy();
-            bool loginSucc = myUserInfoProxy.Login("ccc", "123");
+            bool loginSucc = myUserInfoProxy.Login("abc", "123");
             if (loginSucc)
             {
                 Console.WriteLine("Login Succ");
@@ -18,6 +17,8 @@ namespace Csharp_RPC_Client
                 Console.WriteLine("Login Failed");
             }
 
+            int calculateRes = myUserInfoProxy.Add(1, 2);
+            Console.WriteLine("1+2=" + calculateRes);
 
             Console.ReadLine();
         }

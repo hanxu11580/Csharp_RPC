@@ -9,6 +9,8 @@
     interface IUserInfo
     {
         bool Login(string account, string pwd);
+
+        int Add(int a, int b);
     }
 
     public class MyUserInfoProxy : IUserInfo
@@ -48,7 +50,6 @@
             Socket sk = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             sk.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8888));
             sk.Send(sendBytes);
-            Console.WriteLine("Send字节数" + sendBytes.Length);
 
             byte[] rBuffer = new byte[1024];
             int rCount = sk.Receive(rBuffer);
@@ -58,6 +59,35 @@
             }
             throw new Exception();
         }
+
+        public int Add(int a, int b)
+        {
+            byte[] sendBytes = EncodeSendPackage(nameof(IUserInfo), "Add", 2, TypeEnum.Int, new List<ArgTypeInfo>() {
+                new ArgTypeInfo()
+                {
+                    argType = TypeEnum.Int,value = a
+                },
+                new ArgTypeInfo()
+                {
+                    argType = TypeEnum.Int,value = b
+                }
+            });
+
+            Socket sk = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            sk.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8888));
+            sk.Send(sendBytes);
+
+            byte[] rBuffer = new byte[1024];
+            int rCount = sk.Receive(rBuffer);
+            if (rCount > 0)
+            {
+                int res = Bytes2Int(rBuffer);
+                return res;
+            }
+            throw new Exception();
+        }
+
+
 
         private static byte[] EncodeSendPackage(string interfaceName, string methodName, int argLen, TypeEnum returnType, List<ArgTypeInfo> argTypeInfos
             )
